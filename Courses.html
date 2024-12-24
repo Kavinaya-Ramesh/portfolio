@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #111;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #ff0077;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            color: #ff0077;
+            transform: scale(1.1);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 100px 20px;
+            margin-top: 80px;
+            max-width: 1200px;
+            margin: 80px auto;
+        }
+
+        #Courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            background-color: #111;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+        }
+
+        #Courses h1 {
+            grid-column: 1 / -1;
+            font-size: 2.5rem;
+            color: #ff0077;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .Courses-item {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .Courses-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(255, 0, 119, 0.8);
+        }
+
+        .Courses-item h3 {
+            color: #ff0077;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .Courses-item p {
+            font-size: 1rem;
+            color: #ddd;
+            margin: 5px 0;
+            line-height: 1.6;
+        }
+
+        .Courses-item p:first-of-type {
+            font-style: italic;
+            color: #999;
+        }
+
+        /* Download Button Styles */
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: #ff0077;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .download-btn svg {
+            margin-left: 10px;
+        }
+
+        .download-btn:hover {
+            background-color: #ff3399;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>KAVINAYA</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#Courses">Courses</a>
+        </nav>
+    </header>
+
+    <!-- Courses Section -->
+    <section id="Courses">
+        <h1>My Courses & Certifications</h1>
+        <div class="Courses-item">
+            <h3>1. Advanced Diploma in C, C++</h3>
+            <p>CSC Institute, Chennai, India</p>
+            <p>Skills: C (Programming Language) · C++</p>
+            <a href="certificates/advanced_diploma_cc.pdf" download="Advanced_Diploma_C_C++" class="download-btn">
+                Download Certificate
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <path d="M7 10l5 5 5-5"></path>
+                    <path d="M12 15V3"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="Courses-item">
+            <h3>2. Project Contest</h3>
+            <p>Panimalar Engineering College, Apr 2023</p>
+            <p>Skills: Machine Learning · Weather Forecasting · Pandas (Software)</p>
+            <a href="certificates/project_contest.pdf" download="Project_Contest_Certificate" class="download-btn">
+                Download Certificate
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <path d="M7 10l5 5 5-5"></path>
+                    <path d="M12 15V3"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="Courses-item">
+            <h3>3. MOE's Innovation Cell</h3>
+            <p>Institution’s Innovation Council, Apr 2023</p>
+            <p>Skills: Machine Learning · Pandas (Software)</p>
+            <a href="certificates/moe_innovation.pdf" download="MOEs_Innovation_Certificate" class="download-btn">
+                Download Certificate
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <path d="M7 10l5 5 5-5"></path>
+                    <path d="M12 15V3"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="Courses-item">
+            <h3>4.AWS</h3>
+            <p>Amazon Web Services, July 2023</p>
+            <p>Skills: Cloud Computing · EC2 · S3 ·Networking & Security </p>
+            
+                
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <path d="M7 10l5 5 5-5"></path>
+                    <path d="M12 15V3"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="Courses-item">
+            <h3>5.Java </h3>
+            <p>Codechef, Dec 2023</p>
+            <p>Skills: java · Core java</p>
+            
+                
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <path d="M7 10l5 5 5-5"></path>
+                    <path d="M12 15V3"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="Courses-item">
+            <h3>6.Data Visualization</h3>
+            <p>Udemy, Oct 2024</p>
+            <p>Skills: visualization tools · Data Storytelling and Communication· S3 ·Design and Aesthetic Sense </p>
+            
+                
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <path d="M7 10l5 5 5-5"></path>
+                    <path d="M12 15V3"></path>
+                </svg>
+            </a>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2024 Kavinaya. All Rights Reserved.
+    </footer>
+</body>
+</html>

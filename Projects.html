@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #111;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #ff0077;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            color: #ff0077;
+            transform: scale(1.1);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 100px 20px;
+            margin-top: 80px;
+            max-width: 1200px;
+            margin: 80px auto;
+        }
+
+        #Projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            background-color: #111;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+        }
+
+        #Projects h1 {
+            grid-column: 1 / -1;
+            font-size: 2.5rem;
+            color: #ff0077;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .Projects-item {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .Projects-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(255, 0, 119, 0.8);
+        }
+
+        .Projects-item h3 {
+            color: #ff0077;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .Projects-item p {
+            font-size: 0.95rem;
+            color: #ddd;
+            margin: 5px 0;
+            line-height: 1.6;
+        }
+
+        .Projects-item p:first-of-type {
+            font-style: italic;
+            color: #999;
+        }
+
+        /* Workflow and Skills Section */
+        .Projects-item p.skills,
+        .Projects-item p.applications {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #ff0077;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>KAVINAYA</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#Projects">Projects</a>
+        </nav>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="Projects">
+        <h1>My Projects</h1>
+        <div class="Projects-item">
+            <h3>1. Signature-based Public Delicate Information Sharing using Distributed Storage</h3>
+            <p>Jan 2024 - Apr 2024, Chennai, Tamil Nadu, India</p>
+            <p>This project focuses on securely sharing sensitive data using cryptographic signatures and distributed storage systems. It ensures data authenticity, integrity, and privacy by leveraging encryption and distributed storage.</p>
+            <p class="skills">Skills Gained: Cloud Computing, Java, Encryption Methods (AES & DES), HTML & CSS, Bootstrap, Blockchain</p>
+            <p class="applications">Applications: Healthcare, Finance, Legal, Academia</p>
+        </div>
+        <div class="Projects-item">
+            <h3>2. METAR Weather Forecasting using the Facebook Prophet Model</h3>
+            <p>Apr 2023 - Apr 2023, Chennai, Tamil Nadu, India</p>
+            <p>This project involves using METAR data and the Facebook Prophet model to create accurate weather forecasts, focusing on aviation safety and planning.</p>
+        </div>
+        <div class="Projects-item">
+            <h3>3. Salary Benchmarking in Data Domain Jobs</h3>
+            <p>Sept 2024 - Dec 2024, MA, USA</p>
+            <p>Analyzed and benchmarked salaries in data-related roles to provide insights into competitive compensation, helping both organizations and professionals.</p>
+        </div>
+        <div class="Projects-item">
+            <h3>4. Comprehensive Survey of GPU Virtualization Solutions</h3>
+            <p>Sept 2024 - Dec 2024, MA, USA</p>
+            <p>Explored techniques and architectures in GPU virtualization to optimize resource sharing for applications like AI, gaming, and cloud computing.</p>
+            <p class="skills">Key Findings: Hardware-supported techniques perform best but are costly; API remoting is simple but slow.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2024 Kavinaya. All Rights Reserved.
+    </footer>
+</body>
+</html>
+
